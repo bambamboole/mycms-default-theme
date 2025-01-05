@@ -24,7 +24,7 @@ class MyCmsDefaultThemeServiceProvider extends PackageServiceProvider
     public function bootingPackage()
     {
         $this->publishes([
-            $this->package->basePath('/../dist') => public_path("dist"),
+            $this->package->basePath('/../dist') => public_path('dist'),
         ], "{$this->package->shortName()}-assets");
     }
 }
