@@ -18,5 +18,13 @@ class MyCmsDefaultThemeServiceProvider extends PackageServiceProvider
             ->name('mycms-default-theme')
             ->hasViews()
             ->hasMigrations(['../settings/create_social_settings']);
+
+    }
+
+    public function bootingPackage()
+    {
+        $this->publishes([
+            $this->package->basePath('/../dist') => public_path("dist"),
+        ], "{$this->package->shortName()}-assets");
     }
 }

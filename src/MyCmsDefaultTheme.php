@@ -14,9 +14,9 @@ class MyCmsDefaultTheme implements ThemeInterface
 {
     public function __construct(Repository $config)
     {
-        $config->set('blade-icons.sets.default', [
+        $config->set('blade-icons.sets.default-theme', [
             'path' => 'vendor/bambamboole/mycms-default-theme/resources/svg',
-            'prefix' => 'icon',
+            'prefix' => 'dt',
         ]);
     }
 

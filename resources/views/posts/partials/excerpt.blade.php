@@ -4,7 +4,7 @@
             <div class="text-grey">{{$post->published_at->toFormattedDayDateString()}}</div>
             <div class="flex text-grey">
                 <div class="pr-1">
-                    @svg('clock', 'fill-current h-4 w-4')
+                    @svg('dt-clock', 'fill-current h-4 w-4')
                 </div>
                 <div class="font-bold tracking-wide text-grey uppercase -mt-1">
                     {{ $post->readingTime()  }} min read

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('seo')
-    @vite('resources/css/app.css', 'vendor/mycms')
+    @vite('resources/css/app.css', 'dist/default-theme')
 </head>
 <body class="font-sans">
 <div class="container mx-auto relative pb-6 px-2">
